@@ -1,6 +1,6 @@
 
 
-/* About */
+/* Pour l'animation de la partie A Propos */
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -21,6 +21,7 @@ function opentab(tabname){
 
 
 
+/* Pour l'animation de la partie Portfolio */
 
 var portfoliolinks = document.getElementsByClassName("portfolio-link");
 var portfoliocontents = document.getElementsByClassName("portfolio-contents");
