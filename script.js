@@ -1,6 +1,6 @@
 
 
-/* Pour l'animation de la partie A Propos */
+/* About */
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -21,24 +21,24 @@ function opentab(tabname){
 
 
 
-/* Pour l'animation de la partie Portfolio */
 
-var portfoliolinks = document.getElementsByClassName("portfolio-link");
-var portfoliocontents = document.getElementsByClassName("portfolio-contents");
+const portfoliolinks = document.querySelectorAll(".portfolio-link");
+const projects = document.querySelectorAll(".project__item");
 
-function openportfolio(portfolioname){
-    for(portfoliolink of portfoliolinks){
-      portfoliolink.classList.remove("active-portfolio-link");
-    }
+function openportfolio(category) {
+    portfoliolinks.forEach((link) => link.classList.remove("active-portfolio-link"));
+    projects.forEach((project) => {
+        if (category === "all" || project.classList.contains(category)) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+    });
 
-    for(portfoliocontent of portfoliocontents){
-      portfoliocontent.classList.remove("active-portfolio");
-    }
-
-    event.currentTarget.classList.add("active-portfolio-link");
-    document.getElementById(portfolioname).classList.add("active-portfolio")
-
+    // Ajouter la classe active sur le bouton cliqué
+    event.target.classList.add("active-portfolio-link");
 }
+
 
 
 
@@ -63,6 +63,32 @@ function reveal() {
   window.addEventListener("scroll", reveal);
 
   
+
+  
+  document.cookie = "flag=FLAG-CTF-XSS; path=/;";
+
+// Fonction pour soumettre le formulaire
+function submitContact() {
+    // Récupère les valeurs des champs
+    const userName = document.getElementById("userName").value;
+    const userMessage = document.getElementById("userMessage").value;
+
+    // Vérifie si les champs sont remplis
+    if (userName.trim() === "" || userMessage.trim() === "") {
+        alert("Veuillez remplir tous les champs.");
+        return;
+    }
+
+    // Affiche le message envoyé directement dans le DOM sans échapper les caractères (vulnérabilité XSS)
+    const messageDisplay = document.getElementById("messageDisplay");
+    messageDisplay.innerHTML = `
+        <p><strong>${userName} dit :</strong></p>
+        <p>${userMessage}</p>
+    `;
+
+    // Réinitialise les champs après l'envoi
+    document.getElementById("contactForm").reset();
+}
 
 
 
