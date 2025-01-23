@@ -22,7 +22,7 @@
     --border-color: #f1f1f1;
     --home-color:#021235; 
 
-/* Font */
+
 --roboto-font: 'Roboto', sans-serif;
 --mono-font: 'Roboto Mono', monospace;
 
@@ -33,7 +33,7 @@
 --fs-sm: 0.875rem;
 --fs-xs: 0.75rem;
 
-/* Font weight */
+
 --medium: 500;
 --semibold: 600;
 --bold: 700;
@@ -348,7 +348,6 @@ section{
 
 /* Portfolio Section */
 
-/* Titres */
 .section__title {
     text-transform: capitalize;
     font-size: 50px;
@@ -360,7 +359,6 @@ section{
     margin-top: 3rem;
 }
 
-/* Catégories */
 .project__categories {
     display: flex;
     justify-content: center;
@@ -383,7 +381,6 @@ section{
     color: #d0265c;
 }
 
-/* Container des projets */
 .projects__container {
     display: flex;
     flex-wrap: wrap;
@@ -391,13 +388,12 @@ section{
     justify-content: center;
 }
 
-/* Carte de projet */
 .project__item {
     background-color: #1c1c1c;
     border: 1px solid #333;
     border-radius: 5px;
     padding: 1rem;
-    width: calc(33.333% - 2rem); /* 3 colonnes */
+    width: calc(33.333% - 2rem); 
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -407,7 +403,6 @@ section{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Image */
 .project__img {
     width: 100%;
     height: auto;
@@ -415,7 +410,6 @@ section{
     margin-bottom: 1rem;
 }
 
-/* Données de projet */
 .project__data {
     color: #fff;
 }
@@ -444,79 +438,72 @@ section{
     text-decoration: underline;
 }
 
-/* Ajuste la position de la section Portfolio */
+
 #portfolio {
-    margin-top: 5rem; /* Descend un peu la section Portfolio */
-    margin-bottom: 0; /* Supprime l'espace inutile entre Portfolio et Contact */
+    margin-top: 5rem; 
+    margin-bottom: 0; 
 }
 
-/* Supprime la hauteur fixe de la section Portfolio */
 .portfolio {
-    height: auto; /* Laisse la hauteur s’adapter dynamiquement */
+    height: auto; 
 }
 
-/* Supprime le positionnement absolu de Contact */
 .contact {
     position: relative;
-    margin-top: 1rem; /* Ajuste la distance entre Portfolio et Contact */
+    margin-top: 1rem; 
 }
 
 
 
-/* Contact Section */
 
 .contact {
     display: flex;
-    flex-direction: column; /* Arrange les éléments verticalement */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     color: #fff;
     font-family: var(--mono-font);
-    position: relative; /* Remplace `absolute` pour éviter les conflits */
-    padding: 3rem 0; /* Ajoute un espacement raisonnable autour de la section */
-    background-color: #000; /* Optionnel pour un contraste visuel */
+    position: relative; 
+    padding: 3rem 0; 
+    background-color: #000; 
 }
 
-/* Titre de la section Contact */
 .title-contact {
     font-size: 60px;
-    padding-bottom: 2rem; /* Réduit l'espace entre le titre et le contenu */
+    padding-bottom: 2rem;
     text-align: center;
 }
 
-/* Informations de contact */
 .num {
-    padding: 1rem 0; /* Uniformise l'espacement vertical */
+    padding: 1rem 0; 
 }
 
 .phone:hover,
 .email:hover {
     color: #d0265c;
-    transition: color 0.3s ease; /* Ajoute une transition pour un effet visuel */
+    transition: color 0.3s ease; 
 }
 
-/* Réseaux sociaux */
 .contact__socials {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Réduit l'écart entre les icônes */
+    gap: 2rem; 
     padding-top: 1.5rem;
 }
 
 .contact__social-link {
     color: #fff;
-    font-size: 1.2rem; /* Agrandit légèrement les liens pour une meilleure lisibilité */
+    font-size: 1.2rem; 
 }
 
 .contact__social-link:hover {
     color: #d0265c;
 }
 
-/* Contact Form Styles */
 .contact__form {
     margin-top: 2rem;
     text-align: center;
-    width: 100%; /* S'étend à toute la largeur */
+    width: 100%; 
 }
 
 .contact__form form {
@@ -536,7 +523,7 @@ section{
 
 .contact__form input,
 .contact__form textarea {
-    width: 100%; /* Prend toute la largeur disponible */
+    width: 100%; 
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -544,7 +531,7 @@ section{
     color: #fff;
     font-size: 1rem;
     resize: none;
-    box-sizing: border-box; /* Assure une largeur constante après réinitialisation */
+    box-sizing: border-box;
 }
 
 .contact__form button {
@@ -562,7 +549,6 @@ section{
     background-color: #333;
 }
 
-/* Message Display */
 #messageDisplay {
     margin-top: 2rem;
     color: #fff;
@@ -571,14 +557,13 @@ section{
 }
 
 #messageDisplay p {
-    color: #0f0; /* Couleur verte pour signaler le succès */
+    color: #0f0; 
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     margin-top: 1rem;
 }
 
-/* Empêche les changements de taille des champs après soumission */
 .contact__form input,
 .contact__form textarea {
     height: auto;
@@ -588,14 +573,13 @@ section{
 
 
 
-/* Footer */
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 1.5rem 0; /* Réduit l'espacement vertical */
+    padding: 1.5rem 0; 
     background: #262626;
     font-weight: 300;
-    margin-top: 2rem; /* Réduit l'espace par rapport au contenu précédent */
+    margin-top: 2rem; 
 }
 
 
