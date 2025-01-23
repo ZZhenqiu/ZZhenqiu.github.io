@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device_width, initial-scale=1.0">
         <title> Portfolio Zhenqiu </title>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./test_style.css">
        
     </head>
 
@@ -33,7 +33,7 @@
 
     <header class="home" id="home">
         <div class="content">
-            <h1 class="anim">Zhao Zhenqiu</h1>
+            <h1 class="anim">Zhenqiu Zhao</h1>
             <h4 class="anim2">Portfolio cybersécurité</h4>
             <a href="#909f99a779adb66a76fc53ab56c7dd1caf35d0fd" class="btn-explore newPos anim3"> Poursuivre <i class="ri-arrow-right-line"></i> </a>
         </div>
@@ -51,38 +51,38 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">A propos_</h1>
-                    <p> Etudiant en préparation d’un triple diplôme et se formant à l’informatique et à la cybersécurité en autodidacte. Mon objectif est de m’orienter vers le secteur de la cybersécurité coté Red Team.
+                    <p> Etudiant en préparation d’un triple diplôme et se formant à l’informatique et à la cybersécurité en autodidacte. 
 
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('cybersécurité')" >Cybersécurité</p>
                         <p class="tab-links" onclick="opentab('informatique')">Informatique</p>
-                        <p class="tab-links" onclick="opentab('apprendre')">En cours d'apprentissage</p>
+                        <p class="tab-links" onclick="opentab('apprendre')">MS CYBER2 Telecom Paris</p>
                     </div>
                     
                     <div class="tab-contents active-tab" id="cybersécurité">
                         
                         <ul>
-                            <li><span>Outils</span><br>Nmap, Gobuster, Idor, Hydra, John the Ripper, XSS, SQLi, SSRF, Ffuf, Metasploit, Reverse Shell (netcat)</li>
-                            <li><span>Méthodes</span><br>Reconnaissance/Osint, Scans, Exploitation, Reporting </li>
-                            <li><span>Juridique/Conformité</span><br>RGPD, NIS, NIS2, ISO 27 001 </li>
+                            <li><span>Outils</span><br>Nmap, Gobuster, Wfuzz, John, Burp Suite, Metasploit, Hydra, Netcat, Linpeas, Wireshark</li>
+                            <li><span>Méthodes</span><br>Reconnaissance/Osint, Scans, Exploitation, Escalation de Priviliège, Reporting </li>
+                            <li><span>Conformité/Risk Management</span><br>RGPD, Méthode Ebios Risk Manager, ISO 27001 </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="informatique">
                         <ul>
-                            <li><span>Langages</span><br>C, HTML, CSS, Javascript, Shell Scripting, Python, SQL </li>
-                            <li><span>Réseaux/Protocoles</span><br>TCP/IP, OSI, TCP, UDP, DNS, HTTP, HTTPS, SHH</li>
-                            <li><span>Systèmes d'Exploitation</span><br>Linux (Ubuntu), Windows, Virtual Machine</li>
+                            <li><span>Langages</span><br>C, Python, HTML, CSS, Javascript, Shell Scripting, SQL </li>
+                            <li><span>Réseaux/Protocoles</span><br>TCP/IP, OSI, TCP, UDP, DNS, HTTP, HTTPS, SSH</li>
+                            <li><span>Systèmes d'Exploitation</span><br>Linux (Ubuntu), Windows, Kali, Milxc</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="apprendre">
                         <ul>
-                            <li><span>Cybersécurité</span><br>TryHackMe : Active Directory, Forensic</li>
-                            <li><span>Informatique</span><br>Harvard CS50</li>
-                            <li><span>Portfolio</span><br> Sécuriser un site web (celui là par exemple) </li>
-                        </ul>
+                            <li><span>Concepts</span><br>Contrôle d'accès(LDAP, Kerberos), Cryptographie(RSA, Kyber, CA), Réseaux, architecture (Processus, Mémoire, assembleur, systèmes embarqués)</li>
+                            <li><span>Outils</span><br>Virtualisation (docker), Logs (Suricata), Siem (ELK) analyse malware (ClamAV)</li>
+                            <li><span>Projet d'approfondissement MS CYBER2</span><br> Prochainement </li>
+                       </ul>
                     </div>
                     <a href="#7cf184f4c67ad58283ecb19349720b0cae756829" class="btn-explore newPos2 anim3"> Poursuivre <i class="ri-arrow-right-line"></i> </a>
                 </div>
@@ -91,190 +91,81 @@
     </div>
 
 
-    <!-- Portfolio -->
 
-    <section class="work section reveal container portfolio" id="7cf184f4c67ad58283ecb19349720b0cae756829">
+    <section class="work section container portfolio" id="7cf184f4c67ad58283ecb19349720b0cae756829">
         <h2 class="section__title">Portfolio_</h2>
-        <div class="project__categories">
-            <button class="category__btn text-xs plus active-work portfolio-link active-portfolio-link" onclick=" openportfolio('all')">ALL</button>
-            <button class="category__btn text-xs plus portfolio-link" onclick=" openportfolio('shellScripting')">Shell Scripting</button>
-            <button class="category__btn text-xs plus portfolio-link" onclick=" openportfolio('cProgram')">C</button>
-            <button class="category__btn text-xs plus portfolio-link" onclick=" openportfolio('python')">Python</button>
-            <button class="category__btn text-xs plus portfolio-link" onclick=" openportfolio('website')">Website</button>
-            <button class="category__btn text-xs plus portfolio-link" onclick=" openportfolio('autre')">Autre</button>
+     
+<div class="project__categories">
+    <button class="category__btn portfolio-link active-portfolio-link" onclick="openportfolio('all')">Tous</button>
+    <button class="category__btn portfolio-link" onclick="openportfolio('python')">Python</button>
+    <button class="category__btn portfolio-link" onclick="openportfolio('cProgram')">C</button>
+    <button class="category__btn portfolio-link" onclick="openportfolio('website')">Website</button>
+    <button class="category__btn portfolio-link" onclick="openportfolio('autre')">Autres</button>
+    <button class="category__btn portfolio-link" onclick="openportfolio('ancien')">Anciens Projets</button>
+</div>
+
+<div class="projects__container">
+    <div class="project__item python">
+        <img src="./assets/python.png" alt="Python Project" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title">Outil pentesting basique en Python</h3>
+            <p class="project__description">Outil effectuant les actions suivantes : port scan, dirbuster, LFI / Command Injection / XSS / SQLi scans</p>
+            <a href="https://github.com/ZZhenqiu/Outil-pentesting-basique-port-scan-dirbuster-LFI-Command-Injection-XSS-SQLi-scans-" class="project__link">Voir le projet</a>
         </div>
-
-
-
-        <div class="projects__container portfolio-contents active-portfolio" id="all">
-
-            <div class="project__item">
-                <img src="./assets/scriptShell.png" alt="projet 1" class="project__img">
-                <div class="project__data">
-                    <h3 class="project__title text-lg">Outil de port scanner et de directory brute force</h3>
-                    <p class="project__description">Inspiré de nmap et dirbuster. Outil permettant de scanner le nombre de ports ouverts à partir d'une addresse IP et de procéder à un directory brute force en utilisant une wordlist. (L'addresse IP vient d'un CTF de TryHackMe). </p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>Shell Scripting</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-de-scan-basique-nmap-et-dirbuster-" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-            <div class="project__item">
-                <img src="./assets/c.png" alt="projet 2" class="project__img">
-                <div class="project__data">
-                    <h3 class="project__title text-lg">Outil de cryptage décryptage basique RSA</h3>
-                    <p class="project__description">Outil permettant de crypter puis décrypter un message en se basant sur l'algorithme RSA. </p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>C</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-de-cryptage-decryptage-RSA-en-C" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-            <div class="project__item">
-                <img src="./assets/python.png" alt="projet 3" class="project__img">
-                <div class="project__data">
-                    <h3 class="project__title text-lg">Outil de détection de vulnérabilités XSS et injections SQL</h3>
-                    <p class="project__description">Outil permettant de détecter la présence de vulnérabilités simples comme XSS ou SQLi à partir d'une addresse IP. (L'addresse IP vient d'un CTF de TryHackMe). </p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>Python</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-detection-vulnerabilites-XSS-et-injections-SQL-en-python" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-            <div class="project__item">
-                <img src="./assets/Website.PNG" alt="projet 4" class="project__img">
-                <div class="project__data">
-                    <h3 class="project__title text-lg">Website pour portfolio</h3>
-                    <p class="project__description">Vous y êtes. Site web réalisé sans framework. Quelques flags se cachent dans ce site. Sauriez-vous les trouver ? </p>
-                    <h4 class="project__stack text-xs">Langages utilisés</h4>
-                    <ul class="tags text-sm">
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/ZZhenqiu.github.io" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-            <div class="project__item">
-                <img src="./assets/rapportPentest.PNG" alt="projet 5" class="project__img">
-                <div class="project__data">
-                    <h3 class="project__title text-lg">Rapport de pentest</h3>
-                    <p class="project__description">Rédaction d'un rapport de pentest avec résumé exécutif, méthodologie, vulnérabilités trouvées, évaluation des risques, recommandations. Pentest réalisé sous la forme d'un CTF de TryHackMe. Utilisation de l'outil personnel de port scanner et directory brute force pour ce CTF. </p>
-                    <h4 class="project__stack text-xs">Outils utilisés</h4>
-                    <ul class="tags text-sm">
-                        <li>VM</li>
-                        <li>Outil de port scanner et directory brute force </li>
-                        <li>DevTools</li>
-                        <li>SSRF</li>
-                    </ul>
-                    <a href="https://docs.google.com/document/d/1TtpZdF_UJ_6fST7YXwRXb1yX2StIJpws_8tpVG3C_uU/edit?usp=sharing" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
     </div>
 
-
-
-
-
-    <div class="projects__containerr"> 
-            <div class="project__itemm portfolio-contents" id="shellScripting">
-                <img src="./assets/scriptShell.png" alt="projet 1" class="project__imgg ajustms">
-                <div class="project__dataa">
-                    <h3 class="project__title text-lg">Outil de port scanner et de directory brute force</h3>
-                    <p class="project__description">Inspiré de nmap et dirbuster. Outil permettant de scanner le nombre de ports ouverts à partir d'une addresse IP et de procéder à un directory brute force en utilisant une wordlist. (L'addresse IP vient d'un CTF de TryHackMe).</p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>Shell Scripting</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-de-scan-basique-nmap-et-dirbuster-" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-        
-
-
-
-            <div class="project__itemm portfolio-contents" id="cProgram">
-                <img src="./assets/c.png" alt="projet 2" class="project__imgg ajustms">
-                <div class="project__dataa">
-                    <h3 class="project__title text-lg">Outil de cryptage décryptage basique RSA</h3>
-                    <p class="project__description">Outil permettant de crypter puis décrypter un message en se basant sur l'algorithme RSA. </p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>C</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-de-cryptage-decryptage-RSA-en-C" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-            <div class="project__itemm portfolio-contents" id="python">
-                <img src="./assets/python.png" alt="projet 3" class="project__imgg ajustms">
-                <div class="project__dataa">
-                    <h3 class="project__title text-lg">Outil de détection de vulnérabilités XSS et injections SQL </h3>
-                    <p class="project__description">Outil permettant de détecter la présence de vulnérabilités simples comme XSS ou SQLi à partir d'une addresse IP. (L'addresse IP vient d'un CTF de TryHackMe).</p>
-                    <h4 class="project__stack text-xs">Langage utilisé</h4>
-                    <ul class="tags text-sm">
-                        <li>Python</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/Outil-detection-vulnerabilites-XSS-et-injections-SQL-en-python" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
+    <div class="project__item cProgram">
+        <img src="./assets/c.png" alt="C Project" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title"><br> Outil basique Time-Base-One-Time-Password (TOTP) en C + rapport Pentest</h3>
+            <p class="project__description">Application simple permettant la génération puis la vérification d'un TOTP + exemples d'attaques dans un rapport de pentest</p>
+            <a href="https://github.com/ZZhenqiu/Outil-basique-Time-Base-One-Time-Password-TOTP-en-C-rapport-Pentest" class="project__link">Voir le projet</a>
         </div>
+    </div>
 
+    <div class="project__item website">
+        <img src="./assets/Website.PNG" alt="Website Project" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title">Portfolio Website</h3>
+            <p class="project__description">Site web réalisé sans framework. Plusieurs flags se cachent ici. Si vous voulez savoir où commencer, essayez de cliquer sur mon nom...</p>
+            <h4>Langages utilisés : HTML, CSS, JavaScript</h4>
+            <a href="https://github.com/ZZhenqiu/ZZhenqiu.github.io" class="project__link">Voir le projet</a>
+        </div>
+    </div>
 
+    <div class="project__item autre">
+        <img src="./assets/ebios.png" alt="Risk Analysis Report" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title">Rapport Analyse de Risque (Ebios Risk Manager)</h3>
+            <p class="project__description"> Utilisation de la méthode Ebios pour le cas ESDown. </p>
+            <h4></h4>
+            <a href="https://docs.google.com/document/d/1YdhHclM2flRu0Itlir6qZW8tui0gzjaA/edit?usp=sharing&ouid=107160522332689331149&rtpof=true&sd=true" class="project__link">Voir le projet</a>
+        </div>
+    </div>
 
-            <div class="project__itemm portfolio-contents" id="website">
-                <img src="./assets/Website.PNG" alt="projet 4" class="project__imgg ajustms">
-                <div class="project__dataa">
-                    <h3 class="project__title text-lg">Site web pour portfolio</h3>
-                    <p class="project__description">Vous y êtes. Site web réalisé sans framework. Quelques flags se cachent dans ce site. Sauriez-vous les trouver ? </p>
-                    <h4 class="project__stack text-xs">Langages utilisés</h4>
-                    <ul class="tags text-sm">
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Javascript</li>
-                    </ul>
-                    <a href="https://github.com/ZZhenqiu/ZZhenqiu.github.io" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
+    <div class="project__item ancien">
+        <img src="./assets/scriptShell.png" alt="Script Shell Project" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title">Outil de port scanner</h3>
+            <p class="project__description">Outil pour scanner des ports et effectuer du brute force.</p>
+            <h4>Langage utilisé : Shell Scripting</h4>
+            <a href="https://github.com/ZZhenqiu/Outil-de-port-scanner-et-de-directory-brute-force-en-script-shell" class="project__link">Voir le projet</a>
+        </div>
+    </div>
 
+    <div class="project__item ancien">
+        <img src="./assets/rapportPentest.PNG" alt="Pentest Report Project" class="project__img">
+        <div class="project__data">
+            <h3 class="project__title">Rapport de Pentest</h3>
+            <p class="project__description">Résumé exécutif, méthodologie, vulnérabilités, et recommandations.</p>
+            <h4></h4>
+            <a href="https://docs.google.com/document/d/1TtpZdF_UJ_6fST7YXwRXb1yX2StIJpws_8tpVG3C_uU/edit?usp=sharing" class="project__link">Voir le projet</a>
+        </div>
+    </div>
+</div>
+</section>
 
-
-            <div class="project__itemm portfolio-contents" id="autre">
-                <img src="./assets/rapportPentest.PNG" alt="projet 5" class="project__imgg ajustms">
-                <div class="project__dataa">
-                    <h3 class="project__title text-lg">Rapport de pentest</h3>
-                    <p class="project__description">Rédaction d'un rapport de pentest avec résumé exécutif, méthodologie, vulnérabilités trouvées, évaluation des risques, recommandations. Pentest réalisé sous la forme d'un CTF de TryHackMe. Utilisation de l'outil personnel de port scanner et directory brute force pour ce CTF.  </p>
-                    <h4 class="project__stack text-xs">Outils utilisés</h4>
-                    <ul class="tags text-sm">
-                        <li>VM</li>
-                        <li>Outil de port scanner et directory brute force </li>
-                        <li>DevTools</li>
-                        <li>SSRF</li>
-                    </ul>
-                    <a href="https://docs.google.com/document/d/1TtpZdF_UJ_6fST7YXwRXb1yX2StIJpws_8tpVG3C_uU/edit?usp=sharing" class="project__link text-sm">www.LienDuProjet.com</a>
-                </div>
-            </div>
-
-
-
-    </section>
+    
 
 
 
@@ -288,22 +179,21 @@
             <div class="contact__container">
                 <div class="contact__info">
                     <div class="contact__list">
-                        <p class="num">Téléphone: <span class="phone"> 07 49 32 98 20 </span> </p>
-                        <p class="num">Email: <span class="email"> zhaozhenqiu7@gmail.com </span> </p>
-                        
+                        <p class="num">Téléphone: <span class="phone"> 07 49 32 98 20 </span></p>
+                        <p class="num">Email: <span class="email"> zhaozhenqiu7@gmail.com </span></p>
                     </div>
       
                     <ul class="contact__socials">
-                        <li> <a href="https://www.linkedin.com/in/zhaozhenqiu/" class="contact__social-link"> Linkedin </a></li>
-                        <li> <a href="https://github.com/ZZhenqiu" class="contact__social-link"> Github </a></li>
+                        <li><a href="https://www.linkedin.com/in/zhaozhenqiu/" class="contact__social-link">Linkedin</a></li>
+                        <li><a href="https://github.com/ZZhenqiu" class="contact__social-link">Github</a></li>
                     </ul>
                 </div>
-      
+    
+
             </div>
         </div>
-      </section>
-      </div>
-    </div>
+    </section>
+    
 
     <div class="messageQuery">
         <p>Bonjour, si vous voyez cette page, c'est que vous êtes probablement sur téléphone ou en écran réduit. </p>
@@ -313,7 +203,7 @@
       
     
 
-        <script src="./script.js" ></script>
+        <script src="./test_script.js" ></script>
     </body>
 
 
